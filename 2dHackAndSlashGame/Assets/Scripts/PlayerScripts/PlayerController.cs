@@ -146,4 +146,22 @@ public class PlayerController : MonoBehaviour {
         Attack3 = false;
     }
 
+    public void AttackSprint()
+    {
+        if (FacingRight)
+        {
+            MyRb.velocity = new Vector2(2f, MyRb.velocity.y);
+        }
+        else if (!FacingRight)
+        {
+            MyRb.velocity = new Vector2(-2f, MyRb.velocity.y);
+        }
+
+    }
+
+    public void EndAttackSprint()
+    {
+        MyRb.velocity = new Vector2(0, MyRb.velocity.y);
+    }
+
 }
