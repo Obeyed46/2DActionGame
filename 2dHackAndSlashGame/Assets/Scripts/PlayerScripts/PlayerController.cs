@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     public float JumpHeight;
 
     //Combo variables
-    bool Attack2, Attack3;
+    bool CanAttack, Attack2, Attack3;
 
     // Use this for initialization
     void Start () {
@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour {
         {
             CanMove = true;
             CanJump = true;
+            CanAttack = true;
             Attack2 = false;
             Attack3 = false;
         }
@@ -58,7 +59,7 @@ public class PlayerController : MonoBehaviour {
         //Attack
         if (Grounded)
         {
-            if (Input.GetKeyDown(KeyCode.Joystick1Button2) && !Attack2 && !Attack3)
+            if (Input.GetKeyDown(KeyCode.Joystick1Button2) && CanAttack && !Attack2 && !Attack3)
             {
                 MyAnim.SetTrigger("Attack1");
             }
@@ -144,6 +145,11 @@ public class PlayerController : MonoBehaviour {
     public void Attack3End()
     {
         Attack3 = false;
+    }
+
+    public void DoNotPlay()
+    {
+        CanAttack = false;
     }
 
     public void AttackSprint()
