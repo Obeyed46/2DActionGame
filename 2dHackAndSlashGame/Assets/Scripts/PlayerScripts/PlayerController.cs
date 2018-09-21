@@ -71,10 +71,16 @@ public class PlayerController : MonoBehaviour {
             {
                 MyAnim.SetTrigger("Attack3");
             }
+
+            if (Input.GetKeyDown(KeyCode.Joystick1Button3))
+            {
+                MyAnim.SetTrigger("HeavyAttack");
+            }
+
         }
 
         //Do not move if Attacking
-        if(MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack2") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
+        if(MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack2") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("HeavyAttack"))
         {
             CanMove = false;
             CanJump = false;
