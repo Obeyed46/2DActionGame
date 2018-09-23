@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    //Instance
+    public static PlayerController Instance;
+
     //General
     public Rigidbody2D MyRb;
     public Animator MyAnim;
@@ -19,14 +22,16 @@ public class PlayerController : MonoBehaviour {
     public Transform GroundCheck;
     public float JumpHeight;
 
-    //Combo variables
+    //Attack variables
     bool CanAttack, Attack2, Attack3;
+    public BoxCollider2D PlayerCollider, PlayerWeaponCollider;
 
     // Use this for initialization
     void Start () {
 
         MyRb = GetComponent<Rigidbody2D>();
         MyAnim = GetComponent<Animator>();
+        PlayerCollider = GetComponent<BoxCollider2D>();
         FacingRight = true;
         CanMove = true;
         CanJump = true;
@@ -34,9 +39,15 @@ public class PlayerController : MonoBehaviour {
         Attack3 = false;
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
+
+    // Update is called once per frame
+    void Update () {
 
         //When Idle state
         if (MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
@@ -175,5 +186,11 @@ public class PlayerController : MonoBehaviour {
     {
         MyRb.velocity = new Vector2(0, MyRb.velocity.y);
     }
+
+    public void EnableAttackCollision()
+    {
+        Physics2D.IgnoreLayerCollision(9, 10, false);
+    }
+    
 
 }
