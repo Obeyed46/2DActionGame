@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
 
     //Attack variables
     bool CanAttack, Attack2, Attack3;
-    public BoxCollider2D PlayerCollider, PlayerWeaponCollider;
+    public BoxCollider2D PlayerCollider;
 
     // Use this for initialization
     void Start () {
@@ -187,10 +187,6 @@ public class PlayerController : MonoBehaviour {
         MyRb.velocity = new Vector2(0, MyRb.velocity.y);
     }
 
-    public void EnableAttackCollision()
-    {
-        Physics2D.IgnoreLayerCollision(9, 10, false);
-    }
     
 
 }
