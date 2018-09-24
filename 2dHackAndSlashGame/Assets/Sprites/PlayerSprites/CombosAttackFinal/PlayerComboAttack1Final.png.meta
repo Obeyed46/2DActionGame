@@ -1,15 +1,14 @@
 fileFormatVersion: 2
-guid: 963d112aa298f884ca184771eb66be99
+guid: 8ee5d7ab25aff3948a169217aae5c22f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerAttackMidSpriteSheet_0
-    21300002: PlayerAttackMidSpriteSheet_1
-    21300004: PlayerAttackMidSpriteSheet_2
-    21300006: PlayerAttackMidSpriteSheet_3
-    21300008: PlayerAttackMidSpriteSheet_4
-    21300010: PlayerAttackMidSpriteSheet_5
-    21300012: PlayerAttackMidSpriteSheet_6
-    21300014: PlayerAttackMidSpriteSheet_7
+    21300000: PlayerComboAttack1Final_0
+    21300002: PlayerComboAttack1Final_1
+    21300004: PlayerComboAttack1Final_2
+    21300006: PlayerComboAttack1Final_3
+    21300008: PlayerComboAttack1Final_4
+    21300010: PlayerComboAttack1Final_5
+    21300012: PlayerComboAttack1Final_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -92,7 +91,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerAttackMidSpriteSheet_0
+      name: PlayerComboAttack1Final_0
       rect:
         serializedVersion: 2
         x: 0
@@ -106,13 +105,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e63147a55fe73a44d8c6e409e061d038
+      spriteID: 58494d9553190a240b018bda6698592f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackMidSpriteSheet_1
+      name: PlayerComboAttack1Final_1
       rect:
         serializedVersion: 2
         x: 200
@@ -126,13 +125,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e089adc7a418440bcdff2fcf8abc82
+      spriteID: 2c1f393ac7db67f479555c1367663b62
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackMidSpriteSheet_2
+      name: PlayerComboAttack1Final_2
       rect:
         serializedVersion: 2
         x: 400
@@ -146,13 +145,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 187d8e6e3bb18364695858496257c0fe
+      spriteID: dd3a250ba65f6c442ad1eb7172133096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackMidSpriteSheet_3
+      name: PlayerComboAttack1Final_3
       rect:
         serializedVersion: 2
         x: 600
@@ -166,13 +165,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9f2923a6b7fa1f4f88d122ba8e1b9cd
+      spriteID: 106d5184aa1ebfe4689edbc1df89c835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackMidSpriteSheet_4
+      name: PlayerComboAttack1Final_4
       rect:
         serializedVersion: 2
         x: 0
@@ -186,13 +185,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f07a8390c2411e4e960e0596b568fe4
+      spriteID: 8cc944bc3ad7dc941927e01f6b20aecb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackMidSpriteSheet_5
+      name: PlayerComboAttack1Final_5
       rect:
         serializedVersion: 2
         x: 200
@@ -206,13 +205,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30a12dba86c584f4f9f0edbae8db2f58
+      spriteID: 16ecd3edcd8690e47977f184cdd2cbb6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackMidSpriteSheet_6
+      name: PlayerComboAttack1Final_6
       rect:
         serializedVersion: 2
         x: 400
@@ -226,27 +225,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08991e159d3cfea4eac9a9c7ebd0fa05
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAttackMidSpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75b5f6a3998053c4f9e40703daf2e74d
+      spriteID: 6ac0dad95e729fb4f891a24db066c2a4
       vertices: []
       indices: 
       edges: []
@@ -254,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4b237b32bff18ab43828593e5cac96b3
+    spriteID: 2a5acfa245ccdaf448d7a1c78344c102
     vertices: []
     indices: 
     edges: []
