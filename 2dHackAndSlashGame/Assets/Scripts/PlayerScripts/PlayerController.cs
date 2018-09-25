@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour {
     //Attack variables
     bool CanAttack, Attack2, Attack3;
     public BoxCollider2D PlayerCollider;
+    public Transform weaponPos;
+    public float weaponRange, weaponDamage;
+    public LayerMask enemiesLayer;
 
     // Use this for initialization
     void Start () {
@@ -81,6 +84,7 @@ public class PlayerController : MonoBehaviour {
             else if (Input.GetKeyDown(KeyCode.JoystickButton2) && !Attack2 && Attack3)
             {
                 MyAnim.SetTrigger("Attack3");
+                CameraScript.Instance.CameraShake(0.05f, 0.07f);
             }
 
             if (Input.GetKeyDown(KeyCode.Joystick1Button3))
@@ -134,14 +138,19 @@ public class PlayerController : MonoBehaviour {
 
     }
 
-
     void Flip()
     {
         FacingRight = !FacingRight;
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
 
-    
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(weaponPos.position, weaponRange);
+    }
+
+
     //Animations Events
 
     public void ComboAttack2()
@@ -185,6 +194,16 @@ public class PlayerController : MonoBehaviour {
     public void EndAttackSprint()
     {
         MyRb.velocity = new Vector2(0, MyRb.velocity.y);
+    }
+
+    public void CheckEnemies()
+    {
+        Collider2D[] enemiesTouched = Physics2D.OverlapCircleAll(weaponPos.position, weaponRange, enemiesLayer);
+        for (int i = 0; i < enemiesTouched.Length; i++)
+        {
+            enemiesTouched[i].GetComponent<EnemyScript>().TakeDamage(weaponDamage);
+        }
+
     }
 
     
