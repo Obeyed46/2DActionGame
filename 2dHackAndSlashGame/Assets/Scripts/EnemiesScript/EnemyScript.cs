@@ -8,11 +8,13 @@ public class EnemyScript : MonoBehaviour {
     public float healthPoints;
     public BoxCollider2D EnemyCollider;
     public GameObject Instance;
+    Animator Anim;
    
 
     // Use this for initialization
     void Start () {
 
+        Anim = GetComponent<Animator>();
         EnemyCollider = GetComponent<BoxCollider2D>();
 
 	}
@@ -31,8 +33,9 @@ public class EnemyScript : MonoBehaviour {
 
     public void TakeDamage(float damage)
     {
-        healthPoints -= damage;
-        Debug.Log(healthPoints);
+        //healthPoints -= damage;
+        Anim.SetTrigger("Stagger");
+        //Debug.Log(healthPoints);
         CameraScript.Instance.CameraShake(0.05f, 0.07f);
     }
 }
