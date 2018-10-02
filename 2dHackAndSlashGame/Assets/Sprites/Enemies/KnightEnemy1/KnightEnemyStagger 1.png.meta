@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4d49133195f7f314bb7afe6b4cd60266
+guid: 206f85785a3f04e478aeb2f2fa02fdf8
 TextureImporter:
   fileIDToRecycleName:
-    21300000: KnightEnemyStagger_0
-    21300002: KnightEnemyStagger_1
-    21300004: KnightEnemyStagger_2
+    21300000: KnightEnemyStagger 1_0
+    21300002: KnightEnemyStagger 1_1
+    21300004: KnightEnemyStagger 1_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -87,7 +87,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KnightEnemyStagger_0
+      name: KnightEnemyStagger 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -101,13 +101,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0ce807a68cf4fc4280ff6686b1b96d7
+      spriteID: 8ce915fac8b785448932957e039f7696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KnightEnemyStagger_1
+      name: KnightEnemyStagger 1_1
       rect:
         serializedVersion: 2
         x: 200
@@ -121,13 +121,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51ec99bb6fcf2d047a3354f5e697e935
+      spriteID: c58f01cb4cc82ec46a870bd55746841a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KnightEnemyStagger_2
+      name: KnightEnemyStagger 1_2
       rect:
         serializedVersion: 2
         x: 400
@@ -141,7 +141,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 750ebd108268046449a611e21e1c1519
+      spriteID: ed65418a6492632459f30df8fa1b0ed7
       vertices: []
       indices: 
       edges: []
@@ -149,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f2185b00c49e22746886ae77072e3ce9
+    spriteID: 5a37a7f50c2c5584f8c89aa743598a5c
     vertices: []
     indices: 
     edges: []
