@@ -9,6 +9,10 @@ public class EnemyScript : MonoBehaviour {
     public BoxCollider2D EnemyCollider;
     public GameObject Instance;
     Animator Anim;
+    bool FacingRight;
+
+    //Player target
+    Transform player;
    
 
     // Use this for initialization
@@ -16,6 +20,8 @@ public class EnemyScript : MonoBehaviour {
 
         Anim = GetComponent<Animator>();
         EnemyCollider = GetComponent<BoxCollider2D>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        FacingRight = false;
 
 	}
 	
@@ -28,6 +34,14 @@ public class EnemyScript : MonoBehaviour {
             Destroy(Instance);
         }
 
+        if(transform.position.x < player.transform.position.x && !FacingRight)
+        {
+            Flip();
+        }
+        else if(transform.position.x > player.transform.position.x && FacingRight)
+        {
+            Flip();
+        }
        
 	}
 
@@ -38,4 +52,14 @@ public class EnemyScript : MonoBehaviour {
         //Debug.Log(healthPoints);
         CameraScript.Instance.CameraShake(0.05f, 0.07f);
     }
+
+    void Flip()
+    {
+        FacingRight = !FacingRight;
+        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+    }
+
 }
+
+
+
