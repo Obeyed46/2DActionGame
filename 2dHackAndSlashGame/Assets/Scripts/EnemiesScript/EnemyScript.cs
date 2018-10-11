@@ -45,6 +45,16 @@ public class EnemyScript : MonoBehaviour {
        
 	}
 
+
+    private void FixedUpdate()
+    {
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 2 * Time.deltaTime);
+        }
+
+    }
+
     public void TakeDamage(float damage)
     {
         //healthPoints -= damage;
