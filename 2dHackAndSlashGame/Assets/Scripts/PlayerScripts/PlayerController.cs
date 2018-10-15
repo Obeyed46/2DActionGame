@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour {
 
     //Dash variables
     bool CanDash, IsDashing;
+    public float delayBetweenDashes;
 
     // Use this for initialization
     void Start () {
@@ -66,6 +67,16 @@ public class PlayerController : MonoBehaviour {
             CanDash = true;
             Attack2 = false;
             Attack3 = false;
+        }
+
+        //Timers
+        if(delayBetweenDashes > 0)
+        {
+            delayBetweenDashes -= Time.deltaTime;
+        }
+        else if(delayBetweenDashes < 0)
+        {
+            delayBetweenDashes = 0;
         }
 
 
@@ -110,7 +121,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         //Dashing
-        if(Input.GetKeyDown(KeyCode.Joystick1Button1) && CanDash)
+        if(Input.GetKeyDown(KeyCode.Joystick1Button1) && CanDash && delayBetweenDashes == 0)
         {
             MyAnim.SetTrigger("Dashing");
         }
@@ -150,11 +161,11 @@ public class PlayerController : MonoBehaviour {
             {
                 if (FacingRight)
                 {
-                    MyRb.velocity = new Vector2(4f, MyRb.velocity.y);
+                    MyRb.velocity = new Vector2(5.1f, MyRb.velocity.y);
                 }
                 else if (!FacingRight)
                 {
-                    MyRb.velocity = new Vector2(-4f, MyRb.velocity.y);
+                    MyRb.velocity = new Vector2(-5.1f, MyRb.velocity.y);
                 }
             }
 
