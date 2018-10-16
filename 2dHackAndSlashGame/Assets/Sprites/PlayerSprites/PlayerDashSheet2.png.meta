@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 48c89c54a0c8cf146a017bea5e4fcf7e
+guid: 5382d8b8de95a5744a5a880dce3ba1ea
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerDashSheet_0
-    21300002: PlayerDashSheet_1
-    21300004: PlayerDashSheet_2
-    21300006: PlayerDashSheet_3
-    21300008: PlayerDashSheet_4
+    21300000: PlayerDashSheet2_0
+    21300002: PlayerDashSheet2_1
+    21300004: PlayerDashSheet2_2
+    21300006: PlayerDashSheet2_3
+    21300008: PlayerDashSheet2_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -89,12 +89,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerDashSheet_0
+      name: PlayerDashSheet2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 200
-        width: 200
+        width: 300
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -103,18 +103,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 188b56bd31589bd47a5f244aef3ec6b8
+      spriteID: 9aa0dbfb70c78b44ab0e561cd6dc68a7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerDashSheet_1
+      name: PlayerDashSheet2_1
       rect:
         serializedVersion: 2
-        x: 200
+        x: 300
         y: 200
-        width: 200
+        width: 300
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -123,18 +123,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43a194fd6ae34fe47b5e8f24fd175f7e
+      spriteID: 0f504cbf10810b2468efc318f9107243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerDashSheet_2
+      name: PlayerDashSheet2_2
       rect:
         serializedVersion: 2
-        x: 400
+        x: 600
         y: 200
-        width: 200
+        width: 300
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,18 +143,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dfc41e050403464dae097b10a99f008
+      spriteID: bb2b49a8eb8f7c1409ecf8ebf52c4a5f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerDashSheet_3
+      name: PlayerDashSheet2_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 200
+        width: 300
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -163,18 +163,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb1d78f68fc1c774ba692a1d9193f0da
+      spriteID: 4372e07ab71c32c419834ab9cd000809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerDashSheet_4
+      name: PlayerDashSheet2_4
       rect:
         serializedVersion: 2
-        x: 200
+        x: 300
         y: 0
-        width: 200
+        width: 300
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -183,7 +183,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f93f0f8a70ae914f855646d9092c6ea
+      spriteID: e8d09c1fc516d42499389b5b11f5b7b6
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a09a9a5a5bb8fb2438e52bec22489bea
+    spriteID: b8b58e794b07017419d5a2480c4af21e
     vertices: []
     indices: 
     edges: []

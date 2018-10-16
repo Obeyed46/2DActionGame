@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour {
 
 
         //Jump
-        if (Grounded && CanJump && Input.GetKeyDown(KeyCode.Joystick1Button0))
+        if (Grounded && CanJump && Input.GetKeyDown(KeyCode.Joystick1Button0) && !MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Dash"))
         {
             Grounded = false;
             MyAnim.SetBool("IsGrounded", Grounded);
@@ -161,11 +161,11 @@ public class PlayerController : MonoBehaviour {
             {
                 if (FacingRight)
                 {
-                    MyRb.velocity = new Vector2(5.1f, MyRb.velocity.y);
+                    MyRb.velocity = new Vector2(4f, MyRb.velocity.y);
                 }
                 else if (!FacingRight)
                 {
-                    MyRb.velocity = new Vector2(-5.1f, MyRb.velocity.y);
+                    MyRb.velocity = new Vector2(-4f, MyRb.velocity.y);
                 }
             }
 

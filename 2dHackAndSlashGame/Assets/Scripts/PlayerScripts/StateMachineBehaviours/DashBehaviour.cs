@@ -23,7 +23,7 @@ public class DashBehaviour : StateMachineBehaviour {
 
         Physics2D.IgnoreLayerCollision(0, 9, false);
         PlayerController.Instance.delayBetweenDashes = 0.1f;
-        //PlayerController.Instance.MyRb.gravityScale = 1;
+        PlayerController.Instance.MyRb.gravityScale = 1;
 
     }
 
