@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 75d8b9db408a27646b1d2e0e734435c0
+guid: e1c5c8cb6971d9e42988c910e7446070
 TextureImporter:
   fileIDToRecycleName:
-    21300000: EnemyHealthBar_0
-    21300002: EnemyHealthBar_1
-    21300004: EnemyHealthBar_2
+    21300000: EnemyHealthBarSheet_0
+    21300002: EnemyHealthBarSheet_1
+    21300004: EnemyHealthBarSheet_2
+    21300006: EnemyHealthBarSheet_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -87,7 +88,47 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemyHealthBar_0
+      name: EnemyHealthBarSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 50
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed1e4310d7aeb746a20e530af3d227a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHealthBarSheet_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 25
+        width: 50
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b2b317b2795ad42acf0d6d9d114c84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHealthBarSheet_2
       rect:
         serializedVersion: 2
         x: 0
@@ -101,13 +142,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abf00a71dc9712b4eb3537d85ac5d930
+      spriteID: 4610b24d73b8fa84cb0565b3f3ce5d7b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyHealthBar_1
+      name: EnemyHealthBarSheet_3
       rect:
         serializedVersion: 2
         x: 50
@@ -121,27 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b244638f5b456dc48b3fb1b9833cbe9b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyHealthBar_2
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 50
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27f2bd170a04e104a858f2d2884c60a4
+      spriteID: 6e143c28506fd564a8fefa5e5a01bb7a
       vertices: []
       indices: 
       edges: []
@@ -149,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 93b568a0a0218174193ed542a69bd430
+    spriteID: 8557346437a72ee4c8190bb14e5c2939
     vertices: []
     indices: 
     edges: []

@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyScript : MonoBehaviour {
 
     //Generic Variables
-    public float healthPoints;
     public BoxCollider2D EnemyCollider;
     public GameObject Instance;
     Animator Anim;
@@ -13,7 +13,14 @@ public class EnemyScript : MonoBehaviour {
 
     //Player target
     Transform player;
-   
+
+    //Stats
+    public float maxHealht;
+    float currentHealth;
+
+    //HealthBar
+    public Image backGroundBar, maskBar, redBar, yellowBar;
+
 
     // Use this for initialization
     void Start () {
@@ -22,15 +29,16 @@ public class EnemyScript : MonoBehaviour {
         EnemyCollider = GetComponent<BoxCollider2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         FacingRight = false;
+        currentHealth = maxHealht;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-        if(healthPoints <= 0)
+        if(currentHealth <= 0)
         {
-            healthPoints = 0;
+            currentHealth = 0;
             Destroy(Instance);
         }
 
@@ -42,8 +50,14 @@ public class EnemyScript : MonoBehaviour {
         {
             Flip();
         }
-       
-	}
+
+        //HealthBars
+        if (yellowBar.fillAmount > redBar.fillAmount)
+        {
+            yellowBar.fillAmount -= 0.003f;
+        }
+
+    }
 
 
     private void FixedUpdate()
@@ -57,9 +71,16 @@ public class EnemyScript : MonoBehaviour {
 
     public void TakeDamage(float damage)
     {
-        //healthPoints -= damage;
+        if(currentHealth == maxHealht)
+        {
+            backGroundBar.enabled = true;
+            maskBar.enabled = true;
+            redBar.enabled = true;
+            yellowBar.enabled = true;
+        }
+        currentHealth -= damage;
+        redBar.fillAmount -= damage / maxHealht;
         Anim.SetTrigger("Stagger");
-        //Debug.Log(healthPoints);
         CameraScript.Instance.CameraShake(0.05f, 0.07f);
     }
 
