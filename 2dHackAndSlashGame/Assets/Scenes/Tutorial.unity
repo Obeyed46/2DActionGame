@@ -455,7 +455,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   GroundCheck: {fileID: 648506249}
-  JumpHeight: 50
+  JumpHeight: 60
   PlayerCollider: {fileID: 0}
   weaponPos: {fileID: 1632313201}
   weaponRange: 0.28
@@ -633,7 +633,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.07457282, g: 0.084905684, b: 0.033241376, a: 0}
+  m_BackGroundColor: {r: 0.3018868, g: 0.18084727, b: 0.18858424, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 798264939}
-  maxHealht: 50
+  maxHealht: 100
   backGroundBar: {fileID: 1963063501}
   maskBar: {fileID: 1125473255}
   redBar: {fileID: 943859755}
@@ -2156,7 +2156,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15.37, y: 1}
+  m_Size: {x: 13.98, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1997255970
 GameObject:
