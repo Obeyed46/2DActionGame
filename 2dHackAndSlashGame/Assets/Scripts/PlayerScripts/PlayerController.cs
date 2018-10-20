@@ -43,7 +43,6 @@ public class PlayerController : MonoBehaviour {
         CanMove = true;
         CanJump = true;
         CanDash = true;
-        IsDashing = false;
         Attack2 = false;
         Attack3 = false;
 
@@ -65,6 +64,7 @@ public class PlayerController : MonoBehaviour {
             CanJump = true;
             CanAttack = true;
             CanDash = true;
+            IsDashing = false;
             Attack2 = false;
             Attack3 = false;
         }
@@ -157,17 +157,13 @@ public class PlayerController : MonoBehaviour {
             }
 
             //DashSprint
-            if (IsDashing)
+            /*if (IsDashing)
             {
-                if (FacingRight)
-                {
-                    MyRb.velocity = new Vector2(4.6f, MyRb.velocity.y);
-                }
-                else if (!FacingRight)
-                {
-                    MyRb.velocity = new Vector2(-4.6f, MyRb.velocity.y);
-                }
-            }
+                
+                
+                    MyRb.velocity = new Vector2(MyRb.velocity.x * 3, MyRb.velocity.y);
+                
+            }*/
 
         }
 
@@ -233,12 +229,14 @@ public class PlayerController : MonoBehaviour {
 
     public void DashSprint()
     {
-        IsDashing = true;
-    }
-
-    public void EndDashSprint()
-    {
-        IsDashing = false;
+        if (FacingRight)
+        {
+            MyRb.velocity = new Vector2(5f, MyRb.velocity.y);
+        }
+        else if (!FacingRight)
+        {
+            MyRb.velocity = new Vector2(-5f, MyRb.velocity.y);
+        }
     }
 
     public void CheckEnemies()
