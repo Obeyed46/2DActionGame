@@ -231,11 +231,11 @@ public class PlayerController : MonoBehaviour {
     {
         if (FacingRight)
         {
-            MyRb.velocity = new Vector2(5f, MyRb.velocity.y);
+            MyRb.velocity = new Vector2(4.5f, MyRb.velocity.y);
         }
         else if (!FacingRight)
         {
-            MyRb.velocity = new Vector2(-5f, MyRb.velocity.y);
+            MyRb.velocity = new Vector2(-4.5f, MyRb.velocity.y);
         }
     }
 
