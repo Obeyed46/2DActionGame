@@ -155,16 +155,6 @@ public class PlayerController : MonoBehaviour {
                     Flip();
                 }
             }
-
-            //DashSprint
-            /*if (IsDashing)
-            {
-                
-                
-                    MyRb.velocity = new Vector2(MyRb.velocity.x * 3, MyRb.velocity.y);
-                
-            }*/
-
         }
 
     }
@@ -231,11 +221,13 @@ public class PlayerController : MonoBehaviour {
     {
         if (FacingRight)
         {
-            MyRb.velocity = new Vector2(4.5f, MyRb.velocity.y);
+            //MyRb.velocity = new Vector2(4.5f, MyRb.velocity.y);
+            MyRb.velocity = Vector2.right * 4.5f;
         }
         else if (!FacingRight)
         {
-            MyRb.velocity = new Vector2(-4.5f, MyRb.velocity.y);
+            //MyRb.velocity = new Vector2(-4.5f, MyRb.velocity.y);
+            MyRb.velocity = Vector2.left * 4.5f;
         }
     }
 

@@ -633,7 +633,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.3018868, g: 0.18084727, b: 0.18858424, a: 0}
+  m_BackGroundColor: {r: 0.11320752, g: 0.09024562, b: 0.091727026, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -898,6 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 798264939}
+  CanFlip: 0
   maxHealht: 100
   backGroundBar: {fileID: 1963063501}
   maskBar: {fileID: 1125473255}
@@ -2055,7 +2056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -1.235, y: -718.3474}
+  m_AnchoredPosition: {x: -1.2349854, y: -718.3474}
   m_SizeDelta: {x: 1, y: 0.5}
   m_Pivot: {x: 1.5, y: 1}
 --- !u!114 &1963063501

@@ -9,6 +9,10 @@ public class EnemyScript : MonoBehaviour {
     public BoxCollider2D EnemyCollider;
     public GameObject Instance;
     Animator Anim;
+    Rigidbody2D rb;
+
+    //Moving
+    public bool CanFlip;
     bool FacingRight;
 
     //Player target
@@ -26,8 +30,10 @@ public class EnemyScript : MonoBehaviour {
     void Start () {
 
         Anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         EnemyCollider = GetComponent<BoxCollider2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        CanFlip = true;
         FacingRight = false;
         currentHealth = maxHealht;
 
@@ -42,11 +48,11 @@ public class EnemyScript : MonoBehaviour {
             Destroy(Instance);
         }
 
-        if(transform.position.x < player.transform.position.x && !FacingRight)
+        if(transform.position.x < player.transform.position.x && !FacingRight && CanFlip)
         {
             Flip();
         }
-        else if(transform.position.x > player.transform.position.x && FacingRight)
+        else if(transform.position.x > player.transform.position.x && FacingRight && CanFlip)
         {
             Flip();
         }
@@ -57,11 +63,22 @@ public class EnemyScript : MonoBehaviour {
             yellowBar.fillAmount -= 0.003f;
         }
 
+        //Do not flip if attacking
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
+        {
+            CanFlip = false;
+        }
+        else
+        {
+            CanFlip = true;
+        }
+
     }
 
 
     private void FixedUpdate()
     {
+        //Chasing State
         if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 2 * Time.deltaTime);
@@ -88,6 +105,26 @@ public class EnemyScript : MonoBehaviour {
     {
         FacingRight = !FacingRight;
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+    }
+
+    //Animations Events
+
+    public void AttackSprint()
+    {
+        if (FacingRight)
+        {
+            rb.velocity = Vector2.right * 2;
+        }
+        else if (!FacingRight)
+        {
+            rb.velocity = Vector2.left * 2;
+        }
+
+    }
+
+    public void EndAttackSprint()
+    {
+        rb.velocity = new Vector2(0, rb.velocity.y);
     }
 
 }
