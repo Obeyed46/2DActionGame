@@ -24,7 +24,7 @@ public class IdleBehaviour : StateMachineBehaviour {
         else if(Vector2.Distance(animator.transform.position, player.transform.position) <= 0.5f && delayBetweenAttacks == 0)
         {
             animator.SetTrigger("Attack1");
-            delayBetweenAttacks = 0.5f;
+            delayBetweenAttacks = 0.7f;
             delaybtwAttChase = 0.5f;
         }
 

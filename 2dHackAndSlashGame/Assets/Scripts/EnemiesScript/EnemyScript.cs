@@ -17,9 +17,14 @@ public class EnemyScript : MonoBehaviour {
 
     //Player target
     Transform player;
+    public LayerMask playerLayer;
+
+    //Attack variables
+    public Transform weaponPos;
+    public float weaponRange;
 
     //Stats
-    public float maxHealht;
+    public float maxHealht, weaponDamage;
     float currentHealth;
 
     //HealthBar
@@ -86,6 +91,12 @@ public class EnemyScript : MonoBehaviour {
 
     }
 
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(weaponPos.position, weaponRange);
+    }
+
     public void TakeDamage(float damage)
     {
         if(currentHealth == maxHealht)
@@ -113,11 +124,11 @@ public class EnemyScript : MonoBehaviour {
     {
         if (FacingRight)
         {
-            rb.velocity = Vector2.right * 2;
+            rb.velocity = Vector2.right * 3;
         }
         else if (!FacingRight)
         {
-            rb.velocity = Vector2.left * 2;
+            rb.velocity = Vector2.left * 3;
         }
 
     }
@@ -125,6 +136,15 @@ public class EnemyScript : MonoBehaviour {
     public void EndAttackSprint()
     {
         rb.velocity = new Vector2(0, rb.velocity.y);
+    }
+
+    public void CheckPlayer()
+    {
+        if(Physics2D.OverlapCircle(weaponPos.position, weaponRange, playerLayer))
+        {
+            PlayerStats.Instance.TakeDamage(weaponDamage);
+        }
+        
     }
 
 }

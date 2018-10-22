@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 186968470}
   - component: {fileID: 186968469}
   - component: {fileID: 186968468}
+  - component: {fileID: 186968471}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -450,7 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyRb: {fileID: 0}
   MyAnim: {fileID: 0}
-  MaxSpeed: 2.3
+  MaxSpeed: 2.5
   GroundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -509,6 +510,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &186968471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 186968464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba442b41d984c65468e2efb9f7d955ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBeHit: 0
 --- !u!1 &337780544
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +646,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.11320752, g: 0.09024562, b: 0.091727026, a: 0}
+  m_BackGroundColor: {r: 0.17101428, g: 0.254717, b: 0.12375402, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -704,6 +717,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 186968466}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &727292025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727292026}
+  m_Layer: 9
+  m_Name: WeaponPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &727292026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 727292025}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.257, y: -0.108, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 798264941}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &785676035
 GameObject:
@@ -857,6 +898,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1213591339}
+  - {fileID: 727292026}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -899,7 +941,13 @@ MonoBehaviour:
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 798264939}
   CanFlip: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  weaponPos: {fileID: 727292026}
+  weaponRange: 0.28
   maxHealht: 100
+  weaponDamage: 10
   backGroundBar: {fileID: 1963063501}
   maskBar: {fileID: 1125473255}
   redBar: {fileID: 943859755}
