@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ae4c52ed6d49b4f8bd37618431aff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroDistance: 10
+  aggroDistance: 4
 --- !u!114 &114923434534377836
 MonoBehaviour:
   m_ObjectHideFlags: 1

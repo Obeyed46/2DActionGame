@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 9786aaa9c5ca07c4e83fbf985337830d
+guid: da1e95fa441286a4dbb8364c0cf878cc
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerStagger_0
-    21300002: PlayerStagger_1
-    21300004: PlayerStagger_2
+    21300000: PlayerStaggerSheet_0
+    21300002: PlayerStaggerSheet_1
+    21300004: PlayerStaggerSheet_2
+    21300006: PlayerStaggerSheet_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -87,7 +88,47 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerStagger_0
+      name: PlayerStaggerSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bd5948d44fe414f85fb2e81ab9007f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerStaggerSheet_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6007bad8adc3e34186f091fb7304828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerStaggerSheet_2
       rect:
         serializedVersion: 2
         x: 0
@@ -101,13 +142,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23783674fcfe99d48964e8886f92c987
+      spriteID: 462c9b478992dcd44869abed5221a26b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerStagger_1
+      name: PlayerStaggerSheet_3
       rect:
         serializedVersion: 2
         x: 200
@@ -121,27 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edc8ff1a64674934ab9f0ce907cd8933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerStagger_2
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 015dd3c7ce65d8348bd96a6b5e93786d
+      spriteID: 38f038a85c49bc147b9e74c73b17e34c
       vertices: []
       indices: 
       edges: []
@@ -149,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6770f17fe9314ff43b358dfb1ce0c388
+    spriteID: d25a30197390fc941bbd25c664cbf2a6
     vertices: []
     indices: 
     edges: []

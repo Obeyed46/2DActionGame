@@ -109,7 +109,7 @@ public class EnemyScript : MonoBehaviour {
         currentHealth -= damage;
         redBar.fillAmount -= damage / maxHealht;
         Anim.SetTrigger("Stagger");
-        CameraScript.Instance.CameraShake(0.05f, 0.07f);
+        CameraScript.Instance.CameraShake(0.08f, 0.07f);
     }
 
     void Flip()

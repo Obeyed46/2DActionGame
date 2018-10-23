@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour {
     public Transform weaponPos;
     public float weaponRange, weaponDamage;
     public LayerMask enemiesLayer;
+    float delayBetweenCombos;
 
     //Dash variables
     bool CanDash, IsDashing;
@@ -78,6 +79,14 @@ public class PlayerController : MonoBehaviour {
         {
             delayBetweenDashes = 0;
         }
+        if(delayBetweenCombos > 0)
+        {
+            delayBetweenCombos -= Time.deltaTime;
+        }
+        else if(delayBetweenCombos < 0)
+        {
+            delayBetweenCombos = 0;
+        }
 
 
         //Jump
@@ -91,7 +100,7 @@ public class PlayerController : MonoBehaviour {
         //Attack
         if (Grounded)
         {
-            if (Input.GetKeyDown(KeyCode.Joystick1Button2) && CanAttack && !Attack2 && !Attack3)
+            if (Input.GetKeyDown(KeyCode.Joystick1Button2) && CanAttack && !Attack2 && !Attack3 && delayBetweenCombos == 0) 
             {
                 MyAnim.SetTrigger("Attack1");
             }
@@ -102,18 +111,19 @@ public class PlayerController : MonoBehaviour {
             else if (Input.GetKeyDown(KeyCode.JoystickButton2) && !Attack2 && Attack3)
             {
                 MyAnim.SetTrigger("Attack3");
-                CameraScript.Instance.CameraShake(0.05f, 0.07f);
+                delayBetweenCombos = 0.6f;
             }
 
-            if (Input.GetKeyDown(KeyCode.Joystick1Button3))
+            if (Input.GetKeyDown(KeyCode.Joystick1Button3) && delayBetweenCombos == 0)
             {
                 MyAnim.SetTrigger("HeavyAttack");
+                delayBetweenCombos = 0.8f;
             }
 
         }
 
         //Do not move if Attacking or 
-        if(MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack2") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("HeavyAttack") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Dash"))
+        if(MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack2") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("HeavyAttack") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Dash") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Stagger"))
         {
             CanMove = false;
             CanJump = false;
