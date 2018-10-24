@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour {
     public Transform weaponPos;
     public float weaponRange, weaponDamage;
     public LayerMask enemiesLayer;
-    float delayBetweenCombos;
 
     //Dash variables
     bool CanDash, IsDashing;
@@ -79,15 +78,6 @@ public class PlayerController : MonoBehaviour {
         {
             delayBetweenDashes = 0;
         }
-        if(delayBetweenCombos > 0)
-        {
-            delayBetweenCombos -= Time.deltaTime;
-        }
-        else if(delayBetweenCombos < 0)
-        {
-            delayBetweenCombos = 0;
-        }
-
 
         //Jump
         if (Grounded && CanJump && Input.GetKeyDown(KeyCode.Joystick1Button0) && !MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Dash"))
@@ -100,7 +90,7 @@ public class PlayerController : MonoBehaviour {
         //Attack
         if (Grounded)
         {
-            if (Input.GetKeyDown(KeyCode.Joystick1Button2) && CanAttack && !Attack2 && !Attack3 && delayBetweenCombos == 0) 
+            if (Input.GetKeyDown(KeyCode.Joystick1Button2) && CanAttack && !Attack2 && !Attack3) 
             {
                 MyAnim.SetTrigger("Attack1");
             }
@@ -111,13 +101,11 @@ public class PlayerController : MonoBehaviour {
             else if (Input.GetKeyDown(KeyCode.JoystickButton2) && !Attack2 && Attack3)
             {
                 MyAnim.SetTrigger("Attack3");
-                delayBetweenCombos = 0.6f;
             }
 
-            if (Input.GetKeyDown(KeyCode.Joystick1Button3) && delayBetweenCombos == 0)
+            if (Input.GetKeyDown(KeyCode.Joystick1Button3))
             {
                 MyAnim.SetTrigger("HeavyAttack");
-                delayBetweenCombos = 0.8f;
             }
 
         }
