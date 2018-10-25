@@ -1158,6 +1158,7 @@ MonoBehaviour:
     m_Bits: 1
   weaponPos: {fileID: 727292026}
   weaponRange: 0.28
+  canBeStaggered: 0
   maxHealht: 100
   weaponDamage: 10
   backGroundBar: {fileID: 1963063501}
@@ -2409,6 +2410,7 @@ MonoBehaviour:
     m_Bits: 1
   weaponPos: {fileID: 1951498005}
   weaponRange: 0.28
+  canBeStaggered: 0
   maxHealht: 100
   weaponDamage: 10
   backGroundBar: {fileID: 884656832}

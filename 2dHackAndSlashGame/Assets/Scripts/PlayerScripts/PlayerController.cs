@@ -170,6 +170,12 @@ public class PlayerController : MonoBehaviour {
         Gizmos.DrawWireSphere(weaponPos.position, weaponRange);
     }
 
+    public void EndCombo()
+    {
+        Attack2 = false;
+        Attack3 = false;
+    }
+
 
     //Animations Events
 

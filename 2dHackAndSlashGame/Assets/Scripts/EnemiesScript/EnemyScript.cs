@@ -22,6 +22,7 @@ public class EnemyScript : MonoBehaviour {
     //Attack variables
     public Transform weaponPos;
     public float weaponRange;
+    public bool canBeStaggered;
 
     //Stats
     public float maxHealht, weaponDamage;
@@ -41,6 +42,7 @@ public class EnemyScript : MonoBehaviour {
         CanFlip = true;
         FacingRight = false;
         currentHealth = maxHealht;
+        canBeStaggered = true;
 
 	}
 	
@@ -72,10 +74,12 @@ public class EnemyScript : MonoBehaviour {
         if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
         {
             CanFlip = false;
+            canBeStaggered = false;
         }
         else
         {
             CanFlip = true;
+            canBeStaggered = true;
         }
 
     }
@@ -108,8 +112,11 @@ public class EnemyScript : MonoBehaviour {
         }
         currentHealth -= damage;
         redBar.fillAmount -= damage / maxHealht;
-        Anim.SetTrigger("Stagger");
-        CameraScript.Instance.CameraShake(0.08f, 0.07f);
+        if (canBeStaggered)
+        {
+            Anim.SetTrigger("Stagger");
+        }
+        CameraScript.Instance.CameraShake(0.08f, 0.07f); 
     }
 
     void Flip()

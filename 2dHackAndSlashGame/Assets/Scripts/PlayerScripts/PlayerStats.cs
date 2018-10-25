@@ -55,6 +55,7 @@ public class PlayerStats : MonoBehaviour {
             yellowBar.fillAmount = redBar.fillAmount;
             redBar.fillAmount -= damage / maxHealth;
             PlayerController.Instance.MyAnim.SetTrigger("Stagger");
+            PlayerController.Instance.EndCombo();
             CameraScript.Instance.CameraShake(0.05f, 0.07f);
             if (currentHealth <= 0)
             {
