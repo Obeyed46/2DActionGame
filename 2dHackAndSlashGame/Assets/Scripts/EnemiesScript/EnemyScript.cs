@@ -123,7 +123,7 @@ public class EnemyScript : MonoBehaviour {
         {
             StartCoroutine(HitFlash());
         }
-        CameraScript.Instance.CameraShake(0.08f, 0.04f); 
+        CameraScript.Instance.CameraShake(0.1f, 0.04f); 
     }
 
     IEnumerator HitFlash()
