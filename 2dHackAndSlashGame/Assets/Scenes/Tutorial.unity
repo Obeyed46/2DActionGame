@@ -1159,6 +1159,7 @@ MonoBehaviour:
   weaponPos: {fileID: 727292026}
   weaponRange: 0.28
   canBeStaggered: 0
+  hitColor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
   maxHealht: 100
   weaponDamage: 10
   backGroundBar: {fileID: 1963063501}
@@ -2411,6 +2412,7 @@ MonoBehaviour:
   weaponPos: {fileID: 1951498005}
   weaponRange: 0.28
   canBeStaggered: 0
+  hitColor: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 1}
   maxHealht: 100
   weaponDamage: 10
   backGroundBar: {fileID: 884656832}

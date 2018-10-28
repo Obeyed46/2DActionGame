@@ -10,6 +10,7 @@ public class EnemyScript : MonoBehaviour {
     public GameObject Instance;
     Animator Anim;
     Rigidbody2D rb;
+    SpriteRenderer sprite;
 
     //Moving
     public bool CanFlip;
@@ -23,6 +24,7 @@ public class EnemyScript : MonoBehaviour {
     public Transform weaponPos;
     public float weaponRange;
     public bool canBeStaggered;
+    public Color hitColor;
 
     //Stats
     public float maxHealht, weaponDamage;
@@ -37,6 +39,7 @@ public class EnemyScript : MonoBehaviour {
 
         Anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
         EnemyCollider = GetComponent<BoxCollider2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         CanFlip = true;
@@ -116,7 +119,18 @@ public class EnemyScript : MonoBehaviour {
         {
             Anim.SetTrigger("Stagger");
         }
-        CameraScript.Instance.CameraShake(0.08f, 0.07f); 
+        else
+        {
+            StartCoroutine(HitFlash());
+        }
+        CameraScript.Instance.CameraShake(0.08f, 0.04f); 
+    }
+
+    IEnumerator HitFlash()
+    {
+        sprite.color = hitColor;
+        yield return new WaitForSeconds(0.2f);
+        sprite.color = Color.white;
     }
 
     void Flip()
