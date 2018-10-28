@@ -77,7 +77,7 @@ public class EnemyScript : MonoBehaviour {
         if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
         {
             CanFlip = false;
-            canBeStaggered = false;
+            //canBeStaggered = false;
         }
         else
         {
@@ -123,7 +123,7 @@ public class EnemyScript : MonoBehaviour {
         {
             StartCoroutine(HitFlash());
         }
-        CameraScript.Instance.CameraShake(0.1f, 0.04f); 
+        CameraScript.Instance.CameraShake(0.08f, 0.07f); 
     }
 
     IEnumerator HitFlash()

@@ -23,7 +23,7 @@ public class DashBehaviour : StateMachineBehaviour {
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 
         Physics2D.IgnoreLayerCollision(0, 9, false);
-        PlayerController.Instance.delayBetweenDashes = 0.07f;
+        PlayerController.Instance.delayBetweenDashes = 0.05f;
         PlayerController.Instance.MyRb.gravityScale = 1;
         PlayerStats.Instance.canBeHit = true;
 
