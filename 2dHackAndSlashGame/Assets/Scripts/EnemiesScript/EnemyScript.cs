@@ -77,7 +77,11 @@ public class EnemyScript : MonoBehaviour {
         if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
         {
             CanFlip = false;
-            //canBeStaggered = false;
+        }
+        else if(Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
+        {
+            CanFlip = false;
+            canBeStaggered = false;
         }
         else
         {

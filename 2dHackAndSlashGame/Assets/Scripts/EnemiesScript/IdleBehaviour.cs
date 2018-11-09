@@ -23,7 +23,16 @@ public class IdleBehaviour : StateMachineBehaviour {
         }
         else if(Vector2.Distance(animator.transform.position, player.transform.position) <= 0.5f && delayBetweenAttacks == 0)
         {
-            animator.SetTrigger("Attack1");
+            int randInt;
+            randInt = Random.Range(1, 3);
+            if (randInt == 1)
+            {
+                animator.SetTrigger("Attack1");
+            }
+            else if(randInt == 2)
+            {
+                animator.SetTrigger("Attack2");
+            }
             delayBetweenAttacks = 0.7f;
             delaybtwAttChase = 0.5f;
         }
@@ -46,6 +55,7 @@ public class IdleBehaviour : StateMachineBehaviour {
             delaybtwAttChase = 0;
         }
     }
+
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	//override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
