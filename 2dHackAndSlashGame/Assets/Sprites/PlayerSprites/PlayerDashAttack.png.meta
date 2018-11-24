@@ -9,7 +9,6 @@ TextureImporter:
     21300008: PlayerDashAttack_4
     21300010: PlayerDashAttack_5
     21300012: PlayerDashAttack_6
-    21300014: PlayerDashAttack_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -106,7 +105,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dd5b8c91a6988f438ecb67fa79fa872
+      spriteID: abcce51873dcb024a9ca05b9c6f7cc55
       vertices: []
       indices: 
       edges: []
@@ -126,7 +125,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e27cd9429261474cbdea498ecb89033
+      spriteID: f77d39162fb55d3469d9edf96ec56753
       vertices: []
       indices: 
       edges: []
@@ -146,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba230c36f3aa06d40a3e17ed07e336a9
+      spriteID: 2b906193aa62e9f49a54b501bbf8eb99
       vertices: []
       indices: 
       edges: []
@@ -166,7 +165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f18d8a31ab1040343a1884529a55e549
+      spriteID: 111adb90f86b3924c89b88087c04696f
       vertices: []
       indices: 
       edges: []
@@ -186,7 +185,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b41c925e1b560a34d98532031390edb0
+      spriteID: 9e1d5c3f9f613c3419c2d3dbeff827e2
       vertices: []
       indices: 
       edges: []
@@ -206,7 +205,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 320ddc2b0f2fe644797f0c77081a867f
+      spriteID: c2adade1898274d49a26a0e2294281c8
       vertices: []
       indices: 
       edges: []
@@ -226,27 +225,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdf8929139d8ab64a85f285763d33b96
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerDashAttack_7
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adfae78092dd42d4cb357c711fd75c61
+      spriteID: 11ed93341c140184d81cdadd5d841fb4
       vertices: []
       indices: 
       edges: []
@@ -254,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: dfb680473e3c62f4aba9eaa6f98f1896
+    spriteID: 36257b6e6c7773d4a9f16cab941f01fa
     vertices: []
     indices: 
     edges: []

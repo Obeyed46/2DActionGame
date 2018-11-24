@@ -199,36 +199,23 @@ public class PlayerController : MonoBehaviour {
         CanAttack = false;
     }
 
-    public void AttackSprint()
-    {
-        if (FacingRight)
-        {
-            MyRb.velocity = new Vector2(2.5f, MyRb.velocity.y);
-        }
-        else if (!FacingRight)
-        {
-            MyRb.velocity = new Vector2(-2.5f, MyRb.velocity.y);
-        }
-
-    }  
-
     public void EndAttackSprint()
     {
         MyRb.velocity = new Vector2(0, MyRb.velocity.y);
     }
 
-    public void DashSprint()
+
+    public void Sprint(float sprintValue)
     {
         if (FacingRight)
         {
-            //MyRb.velocity = new Vector2(4.5f, MyRb.velocity.y);
-            MyRb.velocity = Vector2.right * 4.8f;
+            MyRb.velocity = Vector2.right * sprintValue;
         }
         else if (!FacingRight)
         {
-            //MyRb.velocity = new Vector2(-4.5f, MyRb.velocity.y);
-            MyRb.velocity = Vector2.left * 4.8f;
+            MyRb.velocity = Vector2.left * sprintValue;
         }
+
     }
 
     public void CheckEnemies()
