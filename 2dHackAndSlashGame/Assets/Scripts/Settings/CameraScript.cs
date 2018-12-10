@@ -46,7 +46,7 @@ public class CameraScript : MonoBehaviour {
     //Called every frame
     void FixedUpdate()
     {
-        Vector3 targetPos = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.3f, transform.position.z);
+        Vector3 targetPos = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.5f, transform.position.z);
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref Velocity, smoothTime);
     }
 
