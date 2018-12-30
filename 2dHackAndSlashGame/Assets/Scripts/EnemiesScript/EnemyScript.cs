@@ -87,6 +87,7 @@ public class EnemyScript : MonoBehaviour {
         {
             CanFlip = true;
             canBeStaggered = true;
+            
         }
 
     }
