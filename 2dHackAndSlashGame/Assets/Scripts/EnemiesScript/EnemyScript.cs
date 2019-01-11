@@ -13,6 +13,7 @@ public class EnemyScript : MonoBehaviour {
     SpriteRenderer sprite;
 
     //Moving
+    public float speed;
     public bool CanFlip;
     bool FacingRight;
 
@@ -98,7 +99,7 @@ public class EnemyScript : MonoBehaviour {
         //Chasing State
         if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 2 * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }
 
     }

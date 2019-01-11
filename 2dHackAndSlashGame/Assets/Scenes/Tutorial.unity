@@ -360,6 +360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 124411590}
+  speed: 2
   CanFlip: 0
   playerLayer:
     serializedVersion: 2
@@ -888,7 +889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &309291549
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -991,7 +992,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 0.66}
+  m_Size: {x: 0.35, y: 0.63}
   m_EdgeRadius: 0
 --- !u!50 &309291553
 Rigidbody2D:
@@ -1026,6 +1027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 309291548}
+  speed: 1.55
   CanFlip: 0
   playerLayer:
     serializedVersion: 2
@@ -1286,6 +1288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 448132537}
+  speed: 2
   CanFlip: 0
   playerLayer:
     serializedVersion: 2
@@ -1778,6 +1781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 798264939}
+  speed: 2
   CanFlip: 0
   playerLayer:
     serializedVersion: 2
