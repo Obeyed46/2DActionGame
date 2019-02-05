@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aggroDistance: 4
+  numbOfPatterns: 2
 --- !u!114 &114923434534377836
 MonoBehaviour:
   m_ObjectHideFlags: 1

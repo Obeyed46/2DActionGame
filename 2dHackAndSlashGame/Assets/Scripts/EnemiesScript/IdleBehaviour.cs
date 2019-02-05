@@ -6,6 +6,7 @@ public class IdleBehaviour : StateMachineBehaviour {
 
     Transform player; //Target
     public float aggroDistance;
+    public int numbOfPatterns;
     float delayBetweenAttacks, delaybtwAttChase;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -24,7 +25,7 @@ public class IdleBehaviour : StateMachineBehaviour {
         else if(Vector2.Distance(animator.transform.position, player.transform.position) <= 0.5f && delayBetweenAttacks == 0)
         {
             int randInt;
-            randInt = Random.Range(1, 3);
+            randInt = Random.Range(1, numbOfPatterns + 1);
             if (randInt == 1)
             {
                 animator.SetTrigger("Attack1");

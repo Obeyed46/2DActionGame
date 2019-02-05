@@ -25,6 +25,7 @@ public class EnemyScript : MonoBehaviour {
     public Transform weaponPos;
     public float weaponRange;
     public bool canBeStaggered;
+    bool hyperArmor;
     public Color hitColor;
 
     //Stats
@@ -46,7 +47,7 @@ public class EnemyScript : MonoBehaviour {
         CanFlip = true;
         FacingRight = false;
         currentHealth = maxHealht;
-        canBeStaggered = true;
+        hyperArmor = false;
 
 	}
 	
@@ -82,12 +83,12 @@ public class EnemyScript : MonoBehaviour {
         else if(Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
         {
             CanFlip = false;
-            canBeStaggered = false;
+            hyperArmor = true; 
         }
         else
         {
             CanFlip = true;
-            canBeStaggered = true;
+            hyperArmor = false;
             
         }
 
@@ -121,7 +122,7 @@ public class EnemyScript : MonoBehaviour {
         }
         currentHealth -= damage;
         redBar.fillAmount -= damage / maxHealht;
-        if (canBeStaggered)
+        if (canBeStaggered && !hyperArmor)
         {
             Anim.SetTrigger("Stagger");
         }
@@ -151,11 +152,11 @@ public class EnemyScript : MonoBehaviour {
     {
         if (FacingRight)
         {
-            rb.velocity = Vector2.right * 3;
+            rb.velocity = Vector2.right * 4;
         }
         else if (!FacingRight)
         {
-            rb.velocity = Vector2.left * 3;
+            rb.velocity = Vector2.left * 4;
         }
 
     }
