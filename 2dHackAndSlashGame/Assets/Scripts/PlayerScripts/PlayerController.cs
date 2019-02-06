@@ -74,9 +74,29 @@ public class PlayerController : MonoBehaviour {
         if (Grounded && CanJump && Input.GetKeyDown(KeyCode.Joystick1Button0) && !MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Dash"))
         {
             Grounded = false;
-            MyAnim.SetBool("IsGrounded", Grounded);
             MyRb.AddForce(new Vector2(0, JumpHeight));
         }
+
+        //HandleAnimationState
+        if (MyRb.velocity.x != 0 && Grounded)
+        {
+            MyAnim.SetInteger("State", 4);
+        }
+        else if (MyRb.velocity.x == 0 && Grounded)
+        {
+            MyAnim.SetInteger("State", 3);
+        }
+
+        if (MyRb.velocity.y > 0 && !Grounded)
+        {
+            MyAnim.SetInteger("State", 1);
+        }
+        else if (MyRb.velocity.y < 0 && !Grounded)
+        {
+            MyAnim.SetInteger("State", 2);
+        }
+
+
 
         //Attack
         if (Grounded)
@@ -132,8 +152,6 @@ public class PlayerController : MonoBehaviour {
         {
             //CheckIfGrounded
             Grounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, GroundLayer);
-            MyAnim.SetBool("IsGrounded", Grounded);
-            MyAnim.SetFloat("VerticalSpeed", MyRb.velocity.y);
 
             //Run
             if (CanMove)
@@ -221,6 +239,7 @@ public class PlayerController : MonoBehaviour {
         }
 
     }
+
 
     public void CheckEnemies()
     {
