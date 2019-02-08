@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
     //General
     public Rigidbody2D MyRb;
     public Animator MyAnim;
+    public SpriteRenderer sprite;
 
     //Run variables
     public float MaxSpeed;
@@ -29,6 +30,11 @@ public class PlayerController : MonoBehaviour {
     public float weaponRange, weaponDamage;
     public LayerMask enemiesLayer;
 
+    //VFXs
+    [SerializeField]
+    GameObject playerGhost;
+    bool SpawnGhost;
+
     //Dash variables
     bool CanDash, IsDashing;
 
@@ -37,6 +43,7 @@ public class PlayerController : MonoBehaviour {
 
         MyRb = GetComponent<Rigidbody2D>();
         MyAnim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
         PlayerCollider = GetComponent<BoxCollider2D>();
         FacingRight = true;
         CanMove = true;
@@ -45,6 +52,7 @@ public class PlayerController : MonoBehaviour {
         Attack2 = false;
         Attack3 = false;
         DashAttack = false;
+        SpawnGhost = false;
 
 	}
 
@@ -142,6 +150,13 @@ public class PlayerController : MonoBehaviour {
         {
             MyAnim.SetTrigger("Dashing");
         }
+
+        //SpawnGhostEffect
+        if (SpawnGhost)
+        {
+            GameObject ghost = Instantiate(playerGhost, transform.position, transform.rotation);
+        }
+
 
     }
 
@@ -250,6 +265,19 @@ public class PlayerController : MonoBehaviour {
         }
 
     }
+
+    public void StartEndGhostEffect()
+    {
+        if (!SpawnGhost)
+        {
+            SpawnGhost = true;
+        }
+        else if (SpawnGhost)
+        {
+            SpawnGhost = false;
+        }
+    }
+
 
     
 

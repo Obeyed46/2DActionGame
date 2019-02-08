@@ -643,6 +643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyRb: {fileID: 0}
   MyAnim: {fileID: 0}
+  sprite: {fileID: 0}
   MaxSpeed: 2.5
   GroundLayer:
     serializedVersion: 2
@@ -656,6 +657,8 @@ MonoBehaviour:
   enemiesLayer:
     serializedVersion: 2
     m_Bits: 512
+  playerGhost: {fileID: 1342125723146802, guid: dd40b1d4bc3cdb941bc29245f857652f,
+    type: 2}
 --- !u!61 &186968469
 BoxCollider2D:
   m_ObjectHideFlags: 0
