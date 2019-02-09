@@ -107,38 +107,34 @@ public class PlayerController : MonoBehaviour {
 
 
         //Attack
-        if (Grounded)
+        if (Input.GetKeyDown(KeyCode.Joystick1Button2) && CanAttack && !Attack2 && !Attack3 && !Input.GetKey(KeyCode.Joystick1Button4))
         {
-            if (Input.GetKeyDown(KeyCode.Joystick1Button2) && CanAttack && !Attack2 && !Attack3 && !Input.GetKey(KeyCode.Joystick1Button4)) 
-            {
-                MyAnim.SetTrigger("Attack1");
-            }
-            else if (Input.GetKeyDown(KeyCode.Joystick1Button2) && Attack2 && !Attack3 && !Input.GetKey(KeyCode.Joystick1Button4))
-            {
-                MyAnim.SetTrigger("Attack2");
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton2) && !Attack2 && Attack3 && !Input.GetKey(KeyCode.Joystick1Button4))
-            {
-                MyAnim.SetTrigger("Attack3");
-            }
-            else if(Input.GetKeyDown(KeyCode.JoystickButton2) && Input.GetKey(KeyCode.Joystick1Button4))
-            {
-                MyAnim.SetTrigger("SpecialAttack");
-            }
+            MyAnim.SetTrigger("Attack1");
+        }
+        else if (Input.GetKeyDown(KeyCode.Joystick1Button2) && Attack2 && !Attack3 && !Input.GetKey(KeyCode.Joystick1Button4))
+        {
+            MyAnim.SetTrigger("Attack2");
+        }
+        else if (Input.GetKeyDown(KeyCode.JoystickButton2) && !Attack2 && Attack3 && !Input.GetKey(KeyCode.Joystick1Button4))
+        {
+            MyAnim.SetTrigger("Attack3");
+        }
+        else if (Input.GetKeyDown(KeyCode.JoystickButton2) && Input.GetKey(KeyCode.Joystick1Button4))
+        {
+            MyAnim.SetTrigger("SpecialAttack");
+        }
 
-            if (Input.GetKeyDown(KeyCode.Joystick1Button3) && !Input.GetKey(KeyCode.Joystick1Button4))
-            {
-                MyAnim.SetTrigger("HeavyAttack");
-            }
-            else if(Input.GetKeyDown(KeyCode.Joystick1Button3) && Input.GetKey(KeyCode.Joystick1Button4))
-            {
-                MyAnim.SetTrigger("DashAttack");
-            }
-
+        if (Input.GetKeyDown(KeyCode.Joystick1Button3) && !Input.GetKey(KeyCode.Joystick1Button4))
+        {
+            MyAnim.SetTrigger("HeavyAttack");
+        }
+        else if (Input.GetKeyDown(KeyCode.Joystick1Button3) && Input.GetKey(KeyCode.Joystick1Button4))
+        {
+            MyAnim.SetTrigger("DashAttack");
         }
 
         //Do not move if Attacking or 
-        if(MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack2") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("HeavyAttack") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Dash") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Stagger") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("DashAttack") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("SpecialAttack"))
+        if (MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack2") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("HeavyAttack") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Dash") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("Stagger") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("DashAttack") || MyAnim.GetCurrentAnimatorStateInfo(0).IsName("SpecialAttack"))
         {
             CanMove = false;
             CanJump = false;
@@ -156,6 +152,7 @@ public class PlayerController : MonoBehaviour {
         {
             GameObject ghost = Instantiate(playerGhost, transform.position, transform.rotation);
         }
+
 
 
     }
