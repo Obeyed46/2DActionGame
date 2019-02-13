@@ -406,6 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 124411590}
+  rb: {fileID: 0}
   speed: 2
   CanFlip: 0
   playerLayer:
@@ -695,7 +696,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   GroundCheck: {fileID: 648506249}
-  JumpHeight: 70
+  JumpHeight: 60
   PlayerCollider: {fileID: 0}
   weaponPos: {fileID: 1632313201}
   weaponRange: 0.28
@@ -1076,6 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 309291548}
+  rb: {fileID: 0}
   speed: 1.8
   CanFlip: 0
   playerLayer:
@@ -1337,6 +1339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 448132537}
+  rb: {fileID: 0}
   speed: 2
   CanFlip: 0
   playerLayer:
@@ -1830,6 +1833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCollider: {fileID: 0}
   Instance: {fileID: 798264939}
+  rb: {fileID: 0}
   speed: 2
   CanFlip: 0
   playerLayer:
@@ -2812,7 +2816,7 @@ Tilemap:
   - first: {x: 9, y: -5, z: 0}
     second:
       m_TileIndex: 8
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -3806,14 +3810,14 @@ Tilemap:
     m_Data: {fileID: 21300006, guid: 4ca2ce5b3d126064790e83bbab7e233f, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 21300018, guid: 4ca2ce5b3d126064790e83bbab7e233f, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300016, guid: 4ca2ce5b3d126064790e83bbab7e233f, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 23
     m_Data: {fileID: 21300014, guid: 4ca2ce5b3d126064790e83bbab7e233f, type: 3}
   - m_RefCount: 63
     m_Data: {fileID: 21300008, guid: 4ca2ce5b3d126064790e83bbab7e233f, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300016, guid: 4ca2ce5b3d126064790e83bbab7e233f, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 184
     m_Data:

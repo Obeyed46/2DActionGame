@@ -263,6 +263,16 @@ public class PlayerController : MonoBehaviour {
 
     }
 
+    public void CheckEnemiesJumpStagger()
+    {
+        Collider2D[] enemiesTouched = Physics2D.OverlapCircleAll(weaponPos.position, weaponRange, enemiesLayer);
+        for (int i = 0; i < enemiesTouched.Length; i++)
+        {
+            enemiesTouched[i].GetComponent<EnemyScript>().rb.AddForce(new Vector2(0f, 1000f));
+        };
+
+    }
+
     public void StartEndGhostEffect()
     {
         if (!SpawnGhost)

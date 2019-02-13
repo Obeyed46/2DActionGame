@@ -9,13 +9,13 @@ public class EnemyScript : MonoBehaviour {
     public BoxCollider2D EnemyCollider;
     public GameObject Instance;
     Animator Anim;
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     SpriteRenderer sprite;
 
     //Moving
     public float speed;
     public bool CanFlip;
-    bool FacingRight;
+    bool FacingRight, canChase;
 
     //Player target
     Transform player;
@@ -25,7 +25,7 @@ public class EnemyScript : MonoBehaviour {
     public Transform weaponPos;
     public float weaponRange;
     public bool canBeStaggered;
-    bool hyperArmor;
+    bool hyperArmor, canAttack;
     public Color hitColor;
 
     //Stats
@@ -48,6 +48,8 @@ public class EnemyScript : MonoBehaviour {
         FacingRight = false;
         currentHealth = maxHealht;
         hyperArmor = false;
+        canChase = true;
+        canAttack = true;
 
 	}
 	
@@ -92,13 +94,25 @@ public class EnemyScript : MonoBehaviour {
             
         }
 
+        if(rb.velocity.y != 0)
+        {
+            canChase = false;
+            canAttack = false;
+        }
+        else
+        {
+            canChase = true;
+            canAttack = true;
+        }
+
+
     }
 
 
     private void FixedUpdate()
     {
         //Chasing State
-        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Run") && canChase)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }
@@ -132,6 +146,8 @@ public class EnemyScript : MonoBehaviour {
         }
         CameraScript.Instance.CameraShake(0.08f, 0.07f); 
     }
+
+
 
     IEnumerator HitFlash()
     {
