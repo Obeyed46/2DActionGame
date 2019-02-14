@@ -96,14 +96,13 @@ public class EnemyScript : MonoBehaviour {
 
         if(rb.velocity.y != 0)
         {
-            canChase = false;
-            canAttack = false;
+            Anim.SetBool("AirStagger", true);
         }
         else
         {
-            canChase = true;
-            canAttack = true;
+            Anim.SetBool("AirStagger", false);
         }
+
 
 
     }

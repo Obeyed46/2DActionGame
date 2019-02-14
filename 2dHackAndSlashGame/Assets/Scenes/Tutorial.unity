@@ -696,7 +696,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   GroundCheck: {fileID: 648506249}
-  JumpHeight: 60
+  JumpHeight: 70
   PlayerCollider: {fileID: 0}
   weaponPos: {fileID: 1632313201}
   weaponRange: 0.28
