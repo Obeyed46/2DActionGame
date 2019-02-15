@@ -103,6 +103,16 @@ public class EnemyScript : MonoBehaviour {
             Anim.SetBool("AirStagger", false);
         }
 
+        //PreventAnimationBugWhilePlayerIsJumping
+        if(PlayerController.Instance.MyRb.velocity.y != 0)
+        {
+            canChase = false;
+        }
+        else
+        {
+            canChase = true;
+        }
+
 
 
     }
@@ -111,9 +121,12 @@ public class EnemyScript : MonoBehaviour {
     private void FixedUpdate()
     {
         //Chasing State
-        if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Run") && canChase)
+        if (canChase)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            if (Anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+            {
+                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            }
         }
 
     }
