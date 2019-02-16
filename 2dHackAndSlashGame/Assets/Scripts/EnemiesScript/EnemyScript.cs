@@ -11,10 +11,14 @@ public class EnemyScript : MonoBehaviour {
     Animator Anim;
     public Rigidbody2D rb;
     SpriteRenderer sprite;
+    [SerializeField]
+    Transform groundCheck;
+    [SerializeField]
+    LayerMask groundLayer;
 
     //Moving
     public float speed;
-    public bool CanFlip;
+    public bool CanFlip, grounded;
     bool FacingRight, canChase;
 
     //Player target
@@ -94,11 +98,12 @@ public class EnemyScript : MonoBehaviour {
             
         }
 
-        if(rb.velocity.y != 0)
+        //IfGrounded
+        if(!grounded)
         {
             Anim.SetBool("AirStagger", true);
         }
-        else
+        else if(grounded)
         {
             Anim.SetBool("AirStagger", false);
         }
@@ -129,6 +134,9 @@ public class EnemyScript : MonoBehaviour {
             }
         }
 
+        //CheckingIfGrounded
+        grounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+
     }
 
     void OnDrawGizmosSelected()
@@ -151,6 +159,10 @@ public class EnemyScript : MonoBehaviour {
         if (canBeStaggered && !hyperArmor)
         {
             Anim.SetTrigger("Stagger");
+        }
+        else if(Anim.GetCurrentAnimatorStateInfo(0).IsName("AirStagger"))
+        {
+            StartCoroutine(HitFlash());
         }
         else
         {
