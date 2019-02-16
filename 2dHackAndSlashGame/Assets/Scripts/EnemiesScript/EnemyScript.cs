@@ -168,7 +168,11 @@ public class EnemyScript : MonoBehaviour {
         {
             StartCoroutine(HitFlash());
         }
-        CameraScript.Instance.CameraShake(0.08f, 0.07f); 
+        CameraScript.Instance.CameraShake(0.08f, 0.07f);
+        if (!grounded)
+        {
+            rb.AddForce(new Vector2(0f, 90f));
+        }
     }
 
 
@@ -214,6 +218,7 @@ public class EnemyScript : MonoBehaviour {
         }
         
     }
+
 
 }
 

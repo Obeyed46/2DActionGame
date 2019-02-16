@@ -119,18 +119,20 @@ public class PlayerController : MonoBehaviour {
         {
             MyAnim.SetTrigger("Attack3");
         }
-        else if (Input.GetKeyDown(KeyCode.JoystickButton2) && Input.GetKey(KeyCode.Joystick1Button4))
+        else if (Input.GetKeyDown(KeyCode.JoystickButton2) && Input.GetKey(KeyCode.Joystick1Button4) && PlayerStats.Instance.specialAttXtimer == 0)
         {
             MyAnim.SetTrigger("SpecialAttack");
+            PlayerStats.Instance.specialAttXtimer = 10f;
         }
 
         if (Input.GetKeyDown(KeyCode.Joystick1Button3) && !Input.GetKey(KeyCode.Joystick1Button4))
         {
             MyAnim.SetTrigger("HeavyAttack");
         }
-        else if (Input.GetKeyDown(KeyCode.Joystick1Button3) && Input.GetKey(KeyCode.Joystick1Button4))
+        else if (Input.GetKeyDown(KeyCode.Joystick1Button3) && Input.GetKey(KeyCode.Joystick1Button4) && PlayerStats.Instance.specialAttYtimer == 0)
         {
             MyAnim.SetTrigger("DashAttack");
+            PlayerStats.Instance.specialAttYtimer = 10f;
         }
 
         //Do not move if Attacking or 
@@ -268,7 +270,7 @@ public class PlayerController : MonoBehaviour {
         Collider2D[] enemiesTouched = Physics2D.OverlapCircleAll(weaponPos.position, weaponRange, enemiesLayer);
         for (int i = 0; i < enemiesTouched.Length; i++)
         {
-            enemiesTouched[i].GetComponent<EnemyScript>().rb.AddForce(new Vector2(0f, 1000f));
+            enemiesTouched[i].GetComponent<EnemyScript>().rb.AddForce(new Vector2(0f, 900f));
         };
 
     }
