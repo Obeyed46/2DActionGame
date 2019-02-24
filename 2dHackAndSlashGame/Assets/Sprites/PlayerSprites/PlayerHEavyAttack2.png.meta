@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 51b7e4c7727a2054085d096ef19d21b9
+guid: 7dd2f8a38b895e347a27534136c79304
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerHeavyAttack_0
-    21300002: PlayerHeavyAttack_1
-    21300004: PlayerHeavyAttack_2
-    21300006: PlayerHeavyAttack_3
-    21300008: PlayerHeavyAttack_4
-    21300010: PlayerHeavyAttack_5
-    21300012: PlayerHeavyAttack_6
+    21300000: PlayerHEavyAttack2_0
+    21300002: PlayerHEavyAttack2_1
+    21300004: PlayerHEavyAttack2_2
+    21300006: PlayerHEavyAttack2_3
+    21300008: PlayerHEavyAttack2_4
+    21300010: PlayerHEavyAttack2_5
+    21300012: PlayerHEavyAttack2_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -91,7 +91,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerHeavyAttack_0
+      name: PlayerHEavyAttack2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,13 +105,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35842d2867e2e834da00345c97d110aa
+      spriteID: e8c01635c52ce9b4fb254a01e938da22
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttack_1
+      name: PlayerHEavyAttack2_1
       rect:
         serializedVersion: 2
         x: 200
@@ -125,13 +125,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82af3c08320cc9044a00906587a1298a
+      spriteID: da4184d545ac78e4eba04176dad01b35
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttack_2
+      name: PlayerHEavyAttack2_2
       rect:
         serializedVersion: 2
         x: 400
@@ -145,13 +145,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5faa2c26cabd2d42bdb259244bd5ee9
+      spriteID: 8185261672865f643aa728de37dce05a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttack_3
+      name: PlayerHEavyAttack2_3
       rect:
         serializedVersion: 2
         x: 600
@@ -165,13 +165,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb025caaafa313045bead5cd3f8af717
+      spriteID: d876f98b2d8c08749962daa4482d0716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttack_4
+      name: PlayerHEavyAttack2_4
       rect:
         serializedVersion: 2
         x: 0
@@ -185,13 +185,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f86b7ebfacd54244b076d89abe96510
+      spriteID: 0203ff92d93bc414498192d48c60a94a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttack_5
+      name: PlayerHEavyAttack2_5
       rect:
         serializedVersion: 2
         x: 200
@@ -205,13 +205,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 022cff38441e6f2488d58b875c9f881e
+      spriteID: 0b17a0a123defc44c89804251ad401c3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttack_6
+      name: PlayerHEavyAttack2_6
       rect:
         serializedVersion: 2
         x: 400
@@ -225,7 +225,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fdd34d35b7711b42a63a8655a07d6f1
+      spriteID: d9342f787984bf9499077cb9e8922cb8
       vertices: []
       indices: 
       edges: []
@@ -233,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6b64919d70979ba48be0a89ee1da5818
+    spriteID: 234939bdffe05514e9c1a3d437b044b0
     vertices: []
     indices: 
     edges: []

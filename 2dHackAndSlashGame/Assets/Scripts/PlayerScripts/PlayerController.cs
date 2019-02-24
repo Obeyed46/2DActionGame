@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
     public float JumpHeight;
 
     //Attack variables
-    bool CanAttack, Attack2, Attack3, DashAttack;
+    bool CanAttack, Attack2, Attack3, heavyAttack2, DashAttack;
     public BoxCollider2D PlayerCollider;
     public Transform weaponPos;
     public float weaponRange, weaponDamage;
@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour {
         CanDash = true;
         Attack2 = false;
         Attack3 = false;
+        heavyAttack2 = false;
         DashAttack = false;
         SpawnGhost = false;
 
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour {
             IsDashing = false;
             Attack2 = false;
             Attack3 = false;
+            heavyAttack2 = false;
             DashAttack = false;
         }
 
@@ -125,9 +127,13 @@ public class PlayerController : MonoBehaviour {
             PlayerStats.Instance.specialAttXtimer = 10f;
         }
 
-        if (Input.GetKeyDown(KeyCode.Joystick1Button3) && !Input.GetKey(KeyCode.Joystick1Button4))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button3) && !Input.GetKey(KeyCode.Joystick1Button4) && !heavyAttack2)
         {
             MyAnim.SetTrigger("HeavyAttack");
+        }
+        else if(Input.GetKeyDown(KeyCode.Joystick1Button3) && !Input.GetKey(KeyCode.Joystick1Button4) && heavyAttack2)
+        {
+            MyAnim.SetTrigger("HeavyAttack2");
         }
         else if (Input.GetKeyDown(KeyCode.Joystick1Button3) && Input.GetKey(KeyCode.Joystick1Button4) && PlayerStats.Instance.specialAttYtimer == 0)
         {
@@ -154,7 +160,6 @@ public class PlayerController : MonoBehaviour {
         {
             GameObject ghost = Instantiate(playerGhost, transform.position, transform.rotation);
         }
-
 
 
     }
@@ -205,6 +210,7 @@ public class PlayerController : MonoBehaviour {
     {
         Attack2 = false;
         Attack3 = false;
+        heavyAttack2 = false;
     }
 
 
@@ -213,21 +219,30 @@ public class PlayerController : MonoBehaviour {
     public void ComboAttack2()
     {
         Attack2 = true;
+        heavyAttack2 = true;
     }
 
     public void Attack2End()
     {
         Attack2 = false;
+        heavyAttack2 = false;
     }
 
     public void ComboAttack3()
     {
         Attack3 = true;
+        heavyAttack2 = true;
     }
 
     public void Attack3End()
     {
         Attack3 = false;
+        heavyAttack2 = false;
+    }
+
+    public void ComboHeavyAttack2()
+    {
+        heavyAttack2 = true;
     }
 
     public void DoNotPlay()
