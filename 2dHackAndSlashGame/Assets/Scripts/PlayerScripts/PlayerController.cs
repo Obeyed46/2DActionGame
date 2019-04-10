@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
     public float JumpHeight;
 
     //Attack variables
-    bool CanAttack, Attack2, Attack3, heavyAttack2, DashAttack;
+    bool CanAttack, Attack2, Attack3, heavyAttack2, DashAttack, fusionActivated;
     public BoxCollider2D PlayerCollider;
     public Transform weaponPos;
     public float weaponRange, weaponDamage;
@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour {
         heavyAttack2 = false;
         DashAttack = false;
         SpawnGhost = false;
+        fusionActivated = false;
 
 	}
 
@@ -159,6 +160,18 @@ public class PlayerController : MonoBehaviour {
         if (SpawnGhost)
         {
             GameObject ghost = Instantiate(playerGhost, transform.position, transform.rotation);
+        }
+
+        //ActivateFusion
+        if(Input.GetKeyDown(KeyCode.JoystickButton5) && !fusionActivated)
+        {
+            MyAnim.SetLayerWeight(1, 1);
+            fusionActivated = true;
+        }
+        else if(Input.GetKeyDown(KeyCode.JoystickButton5) && fusionActivated)
+        {
+            MyAnim.SetLayerWeight(1, 0);
+            fusionActivated = false;
         }
 
 

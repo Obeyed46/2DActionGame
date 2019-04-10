@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Attack2
+  m_Name: PlayerFusionAttack3
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,28 +19,28 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300012, guid: 9e7882ab32240ff4e87f77e2d680b9fb, type: 3}
-    - time: 0.0625
-      value: {fileID: 21300000, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - time: 0.125
-      value: {fileID: 21300002, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - time: 0.1875
-      value: {fileID: 21300004, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - time: 0.25
-      value: {fileID: 21300006, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - time: 0.3125
-      value: {fileID: 21300008, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - time: 0.375
-      value: {fileID: 21300010, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - time: 0.4375
-      value: {fileID: 21300012, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
+      value: {fileID: 21300000, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - time: 0.071428575
+      value: {fileID: 21300002, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - time: 0.14285715
+      value: {fileID: 21300004, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - time: 0.21428572
+      value: {fileID: 21300006, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - time: 0.2857143
+      value: {fileID: 21300008, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - time: 0.35714287
+      value: {fileID: 21300010, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - time: 0.42857143
+      value: {fileID: 21300012, guid: 061d492663861e347bbc7ba23091422d, type: 3}
     - time: 0.5
-      value: {fileID: 21300014, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
+      value: {fileID: 21300014, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - time: 0.5714286
+      value: {fileID: 21300016, guid: 061d492663861e347bbc7ba23091422d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 16
+  m_SampleRate: 14
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -55,21 +55,21 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300012, guid: 9e7882ab32240ff4e87f77e2d680b9fb, type: 3}
-    - {fileID: 21300000, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - {fileID: 21300002, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - {fileID: 21300004, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - {fileID: 21300006, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - {fileID: 21300008, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - {fileID: 21300010, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - {fileID: 21300012, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
-    - {fileID: 21300014, guid: 0a5569ba1fec05e48a7ffab54018107d, type: 3}
+    - {fileID: 21300000, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - {fileID: 21300002, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - {fileID: 21300004, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - {fileID: 21300006, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - {fileID: 21300008, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - {fileID: 21300010, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - {fileID: 21300012, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - {fileID: 21300014, guid: 061d492663861e347bbc7ba23091422d, type: 3}
+    - {fileID: 21300016, guid: 061d492663861e347bbc7ba23091422d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5625
+    m_StopTime: 0.6428572
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -91,34 +91,34 @@ AnimationClip:
   m_GenerateMotionCurves: 0
   m_Events:
   - time: 0
-    functionName: Attack2End
+    functionName: Attack3End
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.125
+  - time: 0.2857143
     functionName: Sprint
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 1.5
     intParameter: 0
     messageOptions: 0
-  - time: 0.1875
+  - time: 0.35714287
     functionName: CheckEnemies
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.25
-    functionName: ComboAttack3
+  - time: 0.42857143
+    functionName: CheckEnemies
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.4375
+  - time: 0.5
     functionName: EndAttackSprint
     data: 
     objectReferenceParameter: {fileID: 0}
