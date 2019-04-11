@@ -283,12 +283,12 @@ public class PlayerController : MonoBehaviour {
     }
 
 
-    public void CheckEnemies()
+    public void CheckEnemies(float wpnDamage)
     {
         Collider2D[] enemiesTouched = Physics2D.OverlapCircleAll(weaponPos.position, weaponRange, enemiesLayer);
         for (int i = 0; i < enemiesTouched.Length; i++)
         {
-            enemiesTouched[i].GetComponent<EnemyScript>().TakeDamage(weaponDamage);
+            enemiesTouched[i].GetComponent<EnemyScript>().TakeDamage(wpnDamage);
         }
 
     }

@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 061d492663861e347bbc7ba23091422d
+guid: de019287440f6524db75e04a2ebe92e4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerFusionAttack1_0
-    21300002: PlayerFusionAttack1_1
-    21300004: PlayerFusionAttack1_2
-    21300006: PlayerFusionAttack1_3
-    21300008: PlayerFusionAttack1_4
-    21300010: PlayerFusionAttack1_5
-    21300012: PlayerFusionAttack1_6
-    21300014: PlayerFusionAttack1_7
-    21300016: PlayerFusionAttack1_8
+    21300000: PlayerFusionAttack3_0
+    21300002: PlayerFusionAttack3_1
+    21300004: PlayerFusionAttack3_2
+    21300006: PlayerFusionAttack3_3
+    21300008: PlayerFusionAttack3_4
+    21300010: PlayerFusionAttack3_5
+    21300012: PlayerFusionAttack3_6
+    21300014: PlayerFusionAttack3_7
+    21300016: PlayerFusionAttack3_8
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -93,7 +93,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerFusionAttack1_0
+      name: PlayerFusionAttack3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -107,13 +107,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 134a7c76699864745ac41cc8187dde5c
+      spriteID: e941ed163086427498dda0d13182c207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack1_1
+      name: PlayerFusionAttack3_1
       rect:
         serializedVersion: 2
         x: 200
@@ -127,13 +127,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77bb24681852b1b41b478229cc9d7948
+      spriteID: c4651bc58da784d40a0994ff0163dada
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack1_2
+      name: PlayerFusionAttack3_2
       rect:
         serializedVersion: 2
         x: 400
@@ -147,13 +147,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4d5b2c1db4ef5b4380072331ac55528
+      spriteID: c9f4daa66e5849c4387e96de5c872738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack1_3
+      name: PlayerFusionAttack3_3
       rect:
         serializedVersion: 2
         x: 600
@@ -167,13 +167,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070fd3f9751a3cc439e61105531be101
+      spriteID: 777b9a22601dfed48af403398a25fd60
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack1_4
+      name: PlayerFusionAttack3_4
       rect:
         serializedVersion: 2
         x: 800
@@ -187,13 +187,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41e5b6b723eb9674698f080343c78790
+      spriteID: 4a03cc6cb4e08ce49839fdc566cf7db2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack1_5
+      name: PlayerFusionAttack3_5
       rect:
         serializedVersion: 2
         x: 0
@@ -207,13 +207,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc1ffe1cb4a38c34f8c6cfa9630a218c
+      spriteID: 56f304a648368e849b72b35b12b7d51f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack1_6
+      name: PlayerFusionAttack3_6
       rect:
         serializedVersion: 2
         x: 200
@@ -227,13 +227,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5634f0dc48403594388b33b3fd457688
+      spriteID: 41bd4c6bd3245ef498aec723451b9181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack1_7
+      name: PlayerFusionAttack3_7
       rect:
         serializedVersion: 2
         x: 400
@@ -247,13 +247,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 936f35fef8a275a40821345287a48f27
+      spriteID: 0b0d7a5b1231c0f4b8f9f02970039f10
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack1_8
+      name: PlayerFusionAttack3_8
       rect:
         serializedVersion: 2
         x: 600
@@ -267,7 +267,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 121f565af4971c3478570fbba917d3c5
+      spriteID: 7b0e103403096024e98f8bb54c5579c3
       vertices: []
       indices: 
       edges: []
@@ -275,7 +275,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b90c587d10a49994b90eef3aba0a1f5f
+    spriteID: d2b69df808e606a45a2228c985e6fa9f
     vertices: []
     indices: 
     edges: []
