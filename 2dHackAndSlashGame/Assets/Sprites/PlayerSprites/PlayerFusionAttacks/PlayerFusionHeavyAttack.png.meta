@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 2b9a230dfead719478da424015400e09
+guid: 49c47c13126328b47866c0822244c1d4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerFusionAttack2_0
-    21300002: PlayerFusionAttack2_1
-    21300004: PlayerFusionAttack2_2
-    21300006: PlayerFusionAttack2_3
-    21300008: PlayerFusionAttack2_4
-    21300010: PlayerFusionAttack2_5
-    21300012: PlayerFusionAttack2_6
-    21300014: PlayerFusionAttack2_7
+    21300000: PlayerFusionHeavyAttack_0
+    21300002: PlayerFusionHeavyAttack_1
+    21300004: PlayerFusionHeavyAttack_2
+    21300006: PlayerFusionHeavyAttack_3
+    21300008: PlayerFusionHeavyAttack_4
+    21300010: PlayerFusionHeavyAttack_5
+    21300012: PlayerFusionHeavyAttack_6
+    21300014: PlayerFusionHeavyAttack_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -92,7 +92,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerFusionAttack2_0
+      name: PlayerFusionHeavyAttack_0
       rect:
         serializedVersion: 2
         x: 0
@@ -106,13 +106,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed5b17dd0499e334299e5bb16deafaf9
+      spriteID: 890a6c264e12182478a97c59f4cd3973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack2_1
+      name: PlayerFusionHeavyAttack_1
       rect:
         serializedVersion: 2
         x: 200
@@ -126,13 +126,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5db31cfb4f51ddf4c9e36114990224cf
+      spriteID: cb74b6621d376d24db80a7c6e67a65aa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack2_2
+      name: PlayerFusionHeavyAttack_2
       rect:
         serializedVersion: 2
         x: 400
@@ -146,13 +146,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26f4683df23910a47b50e599e4ee8388
+      spriteID: f63bf421c8e1ecd41963a5ac60b17298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack2_3
+      name: PlayerFusionHeavyAttack_3
       rect:
         serializedVersion: 2
         x: 600
@@ -166,13 +166,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba54d7376390fb740ad4157fab4c415f
+      spriteID: 66f9773d03ba1df4388e051b4f6e1bf9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack2_4
+      name: PlayerFusionHeavyAttack_4
       rect:
         serializedVersion: 2
         x: 0
@@ -186,13 +186,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61f2e927d50f62149be951bae381fda3
+      spriteID: 461b42b7957cfbe4d9137e6173be70cd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack2_5
+      name: PlayerFusionHeavyAttack_5
       rect:
         serializedVersion: 2
         x: 200
@@ -206,13 +206,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3660601077f0241478de2a72a02669f4
+      spriteID: abbe4745013063b429a2e80cb97e36ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack2_6
+      name: PlayerFusionHeavyAttack_6
       rect:
         serializedVersion: 2
         x: 400
@@ -226,13 +226,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11f4f4c3c4893964295cf657ddaaa107
+      spriteID: 66c85dfef385cd242b25047e65ca9878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerFusionAttack2_7
+      name: PlayerFusionHeavyAttack_7
       rect:
         serializedVersion: 2
         x: 600
@@ -246,7 +246,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5be6f44d8dbe234abc13c682a205020
+      spriteID: 253fd1d1e6f81db49b63f227d97c92b0
       vertices: []
       indices: 
       edges: []
@@ -254,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: bb8a7bba6e528d24cb361a98846fb4c8
+    spriteID: bb9441ed9a39f5e4c95eb09661396d1c
     vertices: []
     indices: 
     edges: []

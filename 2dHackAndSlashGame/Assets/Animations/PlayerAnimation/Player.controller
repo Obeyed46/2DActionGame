@@ -107,6 +107,9 @@ AnimatorController:
     - serializedVersion: 2
       m_State: {fileID: 1102000886495862012}
       m_Motion: {fileID: 7400000, guid: 968f8ef7d2413c549b81219010fcbaf9, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: 1102100435843022892}
+      m_Motion: {fileID: 7400000, guid: 58f520ec57ff4f84faf551902e666df8, type: 2}
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: 0
@@ -1289,6 +1292,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102251106072545752
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FusionHeavyAttack
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 58f520ec57ff4f84faf551902e666df8, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102295483507935494
 AnimatorState:
   serializedVersion: 5
@@ -1720,6 +1748,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 1102082081741353692}
     m_Position: {x: 669, y: 663, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102251106072545752}
+    m_Position: {x: 704, y: 728, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1101038382783176352}
