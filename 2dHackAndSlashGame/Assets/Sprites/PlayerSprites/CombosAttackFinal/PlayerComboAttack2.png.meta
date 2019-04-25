@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 2d0f822c47275574da3bceaf98b502ec
+guid: b9737da8cf2698140882f418d5181ffb
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerAttackCombo3_0
-    21300002: PlayerAttackCombo3_1
-    21300004: PlayerAttackCombo3_2
-    21300006: PlayerAttackCombo3_3
-    21300008: PlayerAttackCombo3_4
-    21300010: PlayerAttackCombo3_5
-    21300012: PlayerAttackCombo3_6
-    21300014: PlayerAttackCombo3_7
+    21300000: PlayerComboAttack2_0
+    21300002: PlayerComboAttack2_1
+    21300004: PlayerComboAttack2_2
+    21300006: PlayerComboAttack2_3
+    21300008: PlayerComboAttack2_4
+    21300010: PlayerComboAttack2_5
+    21300012: PlayerComboAttack2_6
+    21300014: PlayerComboAttack2_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -71,7 +71,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,7 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,7 +92,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerAttackCombo3_0
+      name: PlayerComboAttack2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -106,13 +106,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea16933bd7d9ac840bcf861da4ca0e34
+      spriteID: 33da7959b0f17cb42a4035d1b7fa2735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackCombo3_1
+      name: PlayerComboAttack2_1
       rect:
         serializedVersion: 2
         x: 200
@@ -126,13 +126,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: def1dda7a765eaa4e8a3e134a6c3206e
+      spriteID: 33a84fc85af213641a4f06302dddbb15
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackCombo3_2
+      name: PlayerComboAttack2_2
       rect:
         serializedVersion: 2
         x: 400
@@ -146,13 +146,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a0347784394eeb4aae89859caa37cc5
+      spriteID: 5d788c1d2bb1dcc42985e6dadf47769a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackCombo3_3
+      name: PlayerComboAttack2_3
       rect:
         serializedVersion: 2
         x: 600
@@ -166,13 +166,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f91f4bd48122a64aa2dadee78110a48
+      spriteID: be9b66194dd38774d93c1e0d1a4cbff9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackCombo3_4
+      name: PlayerComboAttack2_4
       rect:
         serializedVersion: 2
         x: 0
@@ -186,13 +186,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbb134fd335fdcb4299031a0a78356b0
+      spriteID: b5108d99128af114f9f4040c9f9f07ba
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackCombo3_5
+      name: PlayerComboAttack2_5
       rect:
         serializedVersion: 2
         x: 200
@@ -206,13 +206,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c70be26e5b2598c4d9442f7102b58ab3
+      spriteID: 9a4c3fc3dc9208241aff20850342988c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackCombo3_6
+      name: PlayerComboAttack2_6
       rect:
         serializedVersion: 2
         x: 400
@@ -226,13 +226,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb84ac53d2f53aa458f72d12a751eee4
+      spriteID: 1e23982ef44b2af4491db42b818f0ca6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAttackCombo3_7
+      name: PlayerComboAttack2_7
       rect:
         serializedVersion: 2
         x: 600
@@ -246,7 +246,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9553f5eda41792418351a0054c00f98
+      spriteID: be9245048b364b345ab9a0bd0f86ed5c
       vertices: []
       indices: 
       edges: []
@@ -254,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1142fd9e6cc8e104589ff699bcc8e799
+    spriteID: d0ae059c51958d74b9bf60972706da3b
     vertices: []
     indices: 
     edges: []
