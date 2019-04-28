@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-guid: 54b8b11d71d1da24b9d1c892ced1e463
+guid: 2b4680a780dc65f469149909ad0c14e4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerHeavyAttackSpriteSheet_0
-    21300002: PlayerHeavyAttackSpriteSheet_1
-    21300004: PlayerHeavyAttackSpriteSheet_2
-    21300006: PlayerHeavyAttackSpriteSheet_3
-    21300008: PlayerHeavyAttackSpriteSheet_4
-    21300010: PlayerHeavyAttackSpriteSheet_5
-    21300012: PlayerHeavyAttackSpriteSheet_6
+    21300000: PlayerHeavyAttack_0
+    21300002: PlayerHeavyAttack_1
+    21300004: PlayerHeavyAttack_2
+    21300006: PlayerHeavyAttack_3
+    21300008: PlayerHeavyAttack_4
+    21300010: PlayerHeavyAttack_5
+    21300012: PlayerHeavyAttack_6
+    21300014: PlayerHeavyAttack_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -91,7 +92,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerHeavyAttackSpriteSheet_0
+      name: PlayerHeavyAttack_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,13 +106,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 408001aa654130542a46a13fc674e95b
+      spriteID: f8924825b5cefcb4cbef6fa49bc26170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttackSpriteSheet_1
+      name: PlayerHeavyAttack_1
       rect:
         serializedVersion: 2
         x: 200
@@ -125,13 +126,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d48c88378551544183fae6775643e65
+      spriteID: 5fd8e84a2991ea34aaa4ff8fbf959aad
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttackSpriteSheet_2
+      name: PlayerHeavyAttack_2
       rect:
         serializedVersion: 2
         x: 400
@@ -145,13 +146,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7ff947672b12d449bacb71d2450d920
+      spriteID: 2de2e3657b5581f42abb6856e68f136e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttackSpriteSheet_3
+      name: PlayerHeavyAttack_3
       rect:
         serializedVersion: 2
         x: 600
@@ -165,13 +166,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 755312e9259161b448bcaf2f302beb8e
+      spriteID: 1735414d37c77fb4395d13ab8dfa9439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttackSpriteSheet_4
+      name: PlayerHeavyAttack_4
       rect:
         serializedVersion: 2
         x: 0
@@ -185,13 +186,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74119e7fcffe1fd408a687b696e94b1b
+      spriteID: 10e65b3d53da4ea4881e9f678751d050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttackSpriteSheet_5
+      name: PlayerHeavyAttack_5
       rect:
         serializedVersion: 2
         x: 200
@@ -205,13 +206,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dfa3c4d85e60ca43ac937dbd5d57105
+      spriteID: 50dcca6f0c4e9c445bb379269e305c1f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerHeavyAttackSpriteSheet_6
+      name: PlayerHeavyAttack_6
       rect:
         serializedVersion: 2
         x: 400
@@ -225,7 +226,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9347c9767991d144f93d8549affa4334
+      spriteID: 993aab8f5a6322b418c4d75e47a5c661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHeavyAttack_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a5412ec2426ca49b2006d19c0f6786
       vertices: []
       indices: 
       edges: []
@@ -233,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 42620fd482bd4204e99d011ccf6b147a
+    spriteID: 8a89fd07e27325f4986df0d6eebc43a3
     vertices: []
     indices: 
     edges: []
