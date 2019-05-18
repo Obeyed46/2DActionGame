@@ -5,6 +5,10 @@ TextureImporter:
     21300000: PlayerFall_0
     21300002: PlayerFall_1
     21300004: PlayerFall_2
+    21300006: PlayerFall_3
+    21300008: PlayerFall_4
+    21300010: PlayerFall_5
+    21300012: PlayerFall_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,10 +94,10 @@ TextureImporter:
       name: PlayerFall_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 123
-        width: 81
-        height: 58
+        x: 0
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -101,7 +105,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bd746d0623a31f4f8de67a9ee68870f
+      spriteID: 2c9de6639410f0944ba829ee470f9894
       vertices: []
       indices: 
       edges: []
@@ -110,10 +114,10 @@ TextureImporter:
       name: PlayerFall_1
       rect:
         serializedVersion: 2
-        x: 109
-        y: 125
-        width: 81
-        height: 58
+        x: 200
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,7 +125,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53bfa370d7b33d448aeeb1cec16ab39c
+      spriteID: e5923bc02aa7e36449e063e742c20085
       vertices: []
       indices: 
       edges: []
@@ -130,10 +134,10 @@ TextureImporter:
       name: PlayerFall_2
       rect:
         serializedVersion: 2
-        x: 52
-        y: 23
-        width: 81
-        height: 58
+        x: 400
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,7 +145,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d3a4a3ba5a02d240b05b367e2acb911
+      spriteID: c26e0fb3fc3ac2846a99e321474ad6e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerFall_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8b32cb7b1087b40ba571dbcd196452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerFall_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8182d08219b60a84a8d6c11a85f1e57e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerFall_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f42ffe47bd44e74090654c91748b7d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerFall_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fe9e73c58cdb146a44c11c794d325f
       vertices: []
       indices: 
       edges: []
@@ -149,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 132d65c2072d38141a0d7d6be9449104
+    spriteID: 5733229f8fc98e544a4dafdcf3c4d658
     vertices: []
     indices: 
     edges: []
