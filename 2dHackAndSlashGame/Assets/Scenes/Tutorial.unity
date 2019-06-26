@@ -860,7 +860,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f0ae19a3d6774aa41bf27823e7986133, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 189f0a39c421ca342a92ee561d1ac1ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -918,7 +918,7 @@ MonoBehaviour:
   MyRb: {fileID: 0}
   MyAnim: {fileID: 0}
   sprite: {fileID: 0}
-  MaxSpeed: 2.5
+  MaxSpeed: 2.2
   GroundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -949,7 +949,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.46, y: 0.56}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1683,7 +1683,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.5
+  orthographic size: 2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
